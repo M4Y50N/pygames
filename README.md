@@ -1,2 +1,2 @@
 # pygames
-Aqui estão alguns jogos que  eu estou fazendo em  Python   ^w^
+Aqui  estão  os jogos que eu desenvolvi usando Python ^w^
