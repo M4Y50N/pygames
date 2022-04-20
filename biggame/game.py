@@ -23,8 +23,6 @@ def display_score():
     return current_time
 
 # animacao do big
-
-
 def kadmus_animation():
     global kadmus_surf, kadmus_index
 
