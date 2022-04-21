@@ -12,3 +12,4 @@
 <img align="center" width="80%" src="https://cdn.discordapp.com/attachments/966819730616901752/966823459726426173/unknown.png">
 <h4>Depois em download:<h4/>
 <img align="center" width="80%" src="https://cdn.discordapp.com/attachments/966819730616901752/966823604723519554/unknown.png">
+ <h4>E pronto, ENJOY!👌<h4/>
