@@ -8,5 +8,5 @@
 <img align="center" width="80%" src="https://cdn.discordapp.com/attachments/966819730616901752/966819872375996516/unknown.png">
 
 <hr/>
-<h4>Para baixar vá no diretorio data e clique no arquivo game.exe e faça o download.<h3/>
+<h4>Para baixar clique no arquivo game.exe, logo no diretório principal do projeto, e faça o download.<h3/>
 
