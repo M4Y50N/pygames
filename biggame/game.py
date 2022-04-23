@@ -3,15 +3,17 @@ from random import randint
 from tracemalloc import start
 from turtle import Screen
 import pygame
-import os, sys
+import os
+import sys
 
 
-#importar 
-dirpath  = os.getcwd()
+# importar
+dirpath = os.getcwd()
 sys.path.append(dirpath)
 
 if getattr(sys, 'frozen', False):
     os.chdir(sys._MEIPASS)
+
 
 def display_score():
     current_time = pygame.time.get_ticks()//1000 - start_time
@@ -23,6 +25,8 @@ def display_score():
     return current_time
 
 # animacao do big
+
+
 def kadmus_animation():
     global kadmus_surf, kadmus_index
 
@@ -93,7 +97,8 @@ kadmus_walk_1 = pygame.image.load(
     "data/imgs/kadmus/kadmus_walk_1.png").convert_alpha()
 kadmus_walk = [kadmus_walk_2, kadmus_walk_1]
 kadmus_index = 0
-kadmus_jump = pygame.image.load('data/imgs/kadmus/kadmus_jump.png').convert_alpha()
+kadmus_jump = pygame.image.load(
+    'data/imgs/kadmus/kadmus_jump.png').convert_alpha()
 kadmus_surf = kadmus_walk[kadmus_index]
 kadmus_rect = kadmus_surf.get_rect(midbottom=(80, 300))
 kadmus_gravity = 0
@@ -103,9 +108,12 @@ obstacles_rect_list = []
 what_obstacle = []
 
 # granada
-granada_frame_1 = pygame.image.load('data/imgs/obs/granada_1.png').convert_alpha()
-granada_frame_2 = pygame.image.load('data/imgs/obs/granada_2.png').convert_alpha()
-granada_frame_3 = pygame.image.load('data/imgs/obs/granada_3.png').convert_alpha()
+granada_frame_1 = pygame.image.load(
+    'data/imgs/obs/granada_1.png').convert_alpha()
+granada_frame_2 = pygame.image.load(
+    'data/imgs/obs/granada_2.png').convert_alpha()
+granada_frame_3 = pygame.image.load(
+    'data/imgs/obs/granada_3.png').convert_alpha()
 granada_frames = [granada_frame_1, granada_frame_2, granada_frame_3]
 granada_frame_index = 0
 granada_surf = granada_frames[granada_frame_index]
@@ -143,7 +151,7 @@ while True:
         if game_active:
             if event.type == pygame.KEYDOWN and kadmus_rect.bottom == 300:
                 if event.key == pygame.K_SPACE:
-                    kadmus_gravity =  -20
+                    kadmus_gravity = -20
                     last = pygame.time.get_ticks()
                     jump = True
 
@@ -173,7 +181,7 @@ while True:
                 granada_surf = granada_frames[granada_frame_index]
         elif event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
             game_active = True
-            the_crews  = 0
+            the_crews = 0
             start_time = pygame.time.get_ticks()//1000
 
     # if jump:
